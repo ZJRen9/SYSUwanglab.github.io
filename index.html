@@ -2,7 +2,7 @@
 <html>
   <head>
 	<meta charaset="utf-8">
-	<title> Home </title>
+	<title> Hello </title>
 	<style>
 			*{
 				margin:0;
@@ -15,6 +15,26 @@
 				background-image: url(./figure/back3.jpg);
 				background-size:cover;
 			}
+
+			.bottom{
+				width:100%;
+				height:5%;
+				top:95%;
+				position:absolute;
+				background-image: url(./figure/back3.jpg);
+				background-position: 0 100%;
+			}
+
+			.bottom_nav{
+				width:100%;
+				padding:20px;
+				position:absolute;
+				top:95%;
+				text-align:center;
+				transition:0.5s;
+			}
+
+
 			.nav{
 				width:100%;
 				padding:20px;
@@ -41,57 +61,51 @@
 			.nav ul li a:hover{
 				color:#f39c12;
 			}
-			.box{
-				width:100%;
-				height:2000px;
-				margin:20px auto;
-			}
-			.nav2{
+			.box_1{
+				top:150px;
+				left:20%;
+				position:relative;
 				width:25%;
-				height:300px;
-				padding:20px;
-				position:absolute;
-				left:20%;
-				top:100px;
-				text-align:center;
-				border:5px;
-				color:#777; 
+				height:25%;
 			}
-			.nav2 ul li{
-				list-style-type:none;
-				display:block;
-				font-size:24px;
-				padding:20px 40px 20px auto;
-				color:#777;
-			}
-
-			.nav3{
+			.box_2{
+				top:125px;
+				left:45%;
+				position:relative;
 				width:30%;
-				height:300px;
-				padding:0px;
-				position:absolute;
-				left:50%;
-				top:130px;
-				text-align:left;
-				border:1px;
-				color:#777; 
+				height:25%;
+				vertical-align:top;
 			}
 
-			.nav4{
+			.box_3{
+				top:600px;
+				left:25%;
+				position:relative;
 				width:50%;
-				height:300px;
-				padding:0px;
-				position:absolute;
-				left:20%;
-				top:230px;
-				text-align:left;
-				border:1px;
-				color:#777; 
+				height:150px;
+				text-align:center;
 			}
 
-			.text{
+			.text_1{
 				word-wrap: break-word;
+				text-align:center;
 				font-family:"Times New Roman";
+			}
+
+			.text_2{
+				word-wrap: break-word;
+				text-align:left;
+				font-family:"楷体";
+				font-size:1.1em;
+			}
+
+			.text_3{
+				color:#ffffff;
+				word-wrap: break-word;
+				text-align:right;
+				vertical-align:bottom;
+				font-family:"Times New Roman";
+				font-size:1.6em;
 			}
 
 		</style>
@@ -100,22 +114,22 @@
 	<div class="header">
 			<div class="nav">
 				<ul>
-					<li> <a href="./index.html">HOME</a> </li>
-					<li> <a href="#">TEAM</a> </li>
-					<li> <a href="./publication.html">PUBLICATION</a> </li>
-					<li> <a href="./fun.html">FUN</a> </li>
-					<li> <a href="#">CONTACT</a> </li>
+					<li> <a href="./index.html">Home</a> </li>
+					<li> <a href="./team.html">Team</a> </li>
+					<li> <a href="./publication.html">Publication</a> </li>
+					<li> <a href="./fun.html">Fun</a> </li>
+					<li> <a href="./contact.html">Contact</a> </li>
 				</ul>
 			</div>
-			<div class="nav2">
-				<div class="text">
-					<img src="./figure/figure1.jpg">
+			<div class="box_1">
+				<div class="text_1">
+					<img height=auto; width=auto; src="./figure/figure1.jpg">
 					<br/>
-					<p1> 王金凯 教授 </p1>
+					<p1 text-align:center;> 王金凯 教授 </p1>
 			  </div>
 			</div>
-			<div class="nav3">
-				<div class="text">
+			<div class="box_2">
+				<div class="text_2">
 					<p1>   王金凯是中山大学引进的教授，博士生导师。2005年毕业于武汉大学生命科学学院获得理学学士学位。2010年毕业于中国科学院昆明动物研究所获得遗传学博士学位（师从宿兵研究员）。2010年至2016年分别在美国爱荷华大学（2010~2012）和加州大学洛杉矶分校（2013~2016）邢毅教授实验室从事生物信息学方向博士后研究。2016年获聘中山大学引进人才。2018年入选广东省珠江人才计划“青年拔尖人才”。
 					</p1>
 					<br/>
@@ -124,7 +138,20 @@
 				  </p1>
 			  </div>
 			</div>
+			<div class="box_3">
+				<p>中山大学中山医学院医学信息学教研室</p>
+				<p>广州市越秀区中山二路74号中山大学北校区医学科技楼631</p>
+				<p>E-mail：wangjk@mail.sysu.edu.cn</p>
+			</div>
+	</div>
 	<!--	<div class="box"<></div> -->
+
+
+	<div class="bottom">
+		<div class="text_3">
+			<p>WangLab</p>
+		</dev>
+	</div>
+
 	</body>
-  </body>
 </html>
